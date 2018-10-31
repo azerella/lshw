@@ -8,9 +8,9 @@ module.exports = {
      * Print the main hw configuration
      */
     print: function () {
-        console.info(
-        `${core.hostname()}
-          Width: ${core.arch()}\t
+        console.info(`${core.hostname()}
+	  Description: Computer
+	  Width: ${core.arch().arch}\t
         *-core\t
           Description: Motherboard\t
             *-memory\t
@@ -32,19 +32,24 @@ module.exports = {
      * Print the module version
      */
     printVersion() {
-        return console.info(packageJson.version);
+        console.info(`lshw ${packageJson.version}`);
     },
     /**
      * Print the short hw configuration
      */
     printShort: function() {
-        return console.info("TODO short");
+		console.info(`H/W path\tDevice\tClass\tDescription\n${'='.repeat(43)}
+		\n/\t\ttodo\ttodo\ttodo
+		`);
     },
     /**
      * Print the help menu
      */
     printHelp: function() {
-        return console.info("TODO help");
+		console.info(`Usage: lshw [ options ] [ --short | --version ]
+		lshw --short\nOptions:
+		-V, --version\t\tPrint lshw version
+		-s, --short\t\tPrint the short hw configuration`);
     }
 }
 

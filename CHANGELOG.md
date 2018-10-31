@@ -1,5 +1,5 @@
 # 0.2.3
--	
+-	Implemented `--help, -help, -h` CLI option
 
 # 0.2.2
 -	Added `.npmignore`

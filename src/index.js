@@ -13,13 +13,10 @@ switch (process.argv[2]) {
 	case "--version":
 		Cli["--version"]().default;
 		break;
-	case "-version":
+	case "-V":
 		Cli["--version"]().default;
 		break;
 	case "--short":
-		Cli["--short"]().default;
-		break;
-	case "-short":
 		Cli["--short"]().default;
 		break;
 	case "-s":
@@ -29,6 +26,9 @@ switch (process.argv[2]) {
 		Cli["--help"]().default;
 		break;
 	case "-help":
+		Cli["--help"]().default;
+		break;
+	case "-h":
 		Cli["--help"]().default;
 		break;
 	default:

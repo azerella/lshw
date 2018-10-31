@@ -9,7 +9,13 @@ module.exports = {
      * @see https://nodejs.org/api/os.html#os_os_arch
      */
     arch: function () {
-        return Os.arch();
+        return {
+			arch: Os.arch(),
+			endian: Os.endianness(),
+			platform: Os.platform(),
+			release: Os.release(),
+			type: Os.type()
+		}
     },
     /**
      * Return the OS hostname
