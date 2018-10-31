@@ -1,4 +1,5 @@
 # 0.2.2
+-   Added `.npmignore`
 -   Added `.vscode/` settings
 -   Added `.github/` settings
 -   Added `README.md`
