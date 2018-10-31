@@ -1,0 +1,52 @@
+version: 2
+jobs:
+    build-and-test-lshw:
+        docker:
+            - image: circleci/node:8.12.0
+        working_directory: ~/lshw
+        steps:
+            - checkout
+            - restore_cache:
+                name: Restore node_modules from cache
+                keys:
+                  - v2-npm-deps-{{ checksum "package.json" }}
+            - run:
+                name: Install Node.js dependencies
+                command: npm i
+            - save_cache:
+                name: Save node_modules to cache
+                key: v2-npm-deps-{{ checksum "package.json" }}
+                paths:
+                  - node_modules
+            - run:
+                name: Run the tests!
+                command: npm test
+            - persist_to_workspace:
+                root: ~/lshw
+                paths:
+                  - ./
+
+
+    publish-to-npm:
+      docker:
+          - image: circleci/node:8.12.0
+      steps:
+          - attach_workspace:
+              at: ~/lshw
+          - run:
+              name: Publish to npm registry
+              command: |
+                cd ~/lshw
+
+
+workflows:
+    version: 2
+    test-and-publish-lshw:
+        jobs:
+            - build-and-test-lshw
+            - publish-to-npm:
+                requires:
+                  - build-and-test-lshw
+                filters:
+                  branches:
+                    only: master
