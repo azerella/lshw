@@ -14,9 +14,6 @@ switch (process.argv[2]) {
     case "-version":
         Cli["--version"]().default;
         break;
-    case "-V":
-        Cli["--version"]().default;
-        break;
     case "--short":
         Cli["--short"]().default;
         break; 
