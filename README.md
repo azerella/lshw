@@ -1,4 +1,4 @@
-# lshw - List hardware information
+# lshw - List hardware
 Node.js version of [lshw](https://www.unix.com/man-page/linux/1/lshw/), a tool to extract detailed information on the hardware configuration of the machine.
 
 [![GitHub stars](https://img.shields.io/github/stars/adamzerella/lshw.svg)](https://github.com/adamzerella/lshw/stargazers)
@@ -9,10 +9,12 @@ This project aims to be as authentic as possible when it comes to the usage of `
 
 > **NOTE**: This project is currently quite new and lacks many of the features from the original `lshw` tool. Additional issues arise when the Node.js `os` library doesn't provide low-level support for things like PCI devices or motherboard bus information.
 
+# Prerequisites
+This project preferences LTS releases:
+- [Node.js >= 10.13.0](https://nodejs.org/dist/v10.13.0)
 
 # Install
 ```bash
-# To install like a global binary
 npm i -g lshw
 ```
 
