@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 "use-strict";
 
 const Cli = require("./cli");
@@ -8,28 +10,28 @@ const Cli = require("./cli");
  * e.g node this_module --version
  */
 switch (process.argv[2]) {
-    case "--version":
-        Cli["--version"]().default;
-        break;
-    case "-version":
-        Cli["--version"]().default;
-        break;
-    case "--short":
-        Cli["--short"]().default;
-        break; 
-    case "-short":
-        Cli["--short"]().default;
-        break; 
-    case "-s":
-        Cli["--short"]().default;
-        break; 
-    case "--help":
-        Cli["--help"]().default;
-        break; 
-    case "-help":
-        Cli["--help"]().default;
-        break;
-    default:
-        Cli.print()
-        break;
+	case "--version":
+		Cli["--version"]().default;
+		break;
+	case "-version":
+		Cli["--version"]().default;
+		break;
+	case "--short":
+		Cli["--short"]().default;
+		break;
+	case "-short":
+		Cli["--short"]().default;
+		break;
+	case "-s":
+		Cli["--short"]().default;
+		break;
+	case "--help":
+		Cli["--help"]().default;
+		break;
+	case "-help":
+		Cli["--help"]().default;
+		break;
+	default:
+		Cli.print()
+		break;
 }

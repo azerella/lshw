@@ -1,16 +1,16 @@
 {
   "name": "lshw",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Node.js version of lshw, a tool to extract detailed information on the hardware configuration of the machine.",
-  "main": "src/index.js",
   "repository": "https://github.com/adamzerella/lshw",
   "author": "Adam A. Zerella <adam.zerella@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "node src/index.js",
-    "test": "echo TODO",
-    "publish": "npm publish"
+    "build": "echo TODO",
+    "test": "echo TODO"
   },
+  "preferGlobal": true,
   "engines": {
     "node": "~8",
     "npm": "~6",
@@ -19,6 +19,7 @@
   "keywords": [
     "lshw",
     "system",
+    "machine",
     "hardware",
     "configuration",
     "list hardware"
