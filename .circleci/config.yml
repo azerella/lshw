@@ -36,6 +36,7 @@ jobs:
               name: Publish to npm registry
               command: |
                 cd ~/lshw
+                echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
                 npm publish
 
 
