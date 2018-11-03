@@ -13,15 +13,6 @@ module.exports = {
 		}
 	},
     /**
-     * CLI argument to print the short hw configuration
-     */
-	short: function () {
-		return {
-			description: "Output hardware paths",
-			default: Output.printShort()
-		}
-	},
-    /**
      * CLI argument to print the help menu for user
      */
 	help: function () {

@@ -16,12 +16,6 @@ switch (process.argv[2]) {
 	case "-V":
 		Cli.version().default
 		break;
-	case "--short":
-		Cli.short().default
-		break;
-	case "-s":
-		Cli.short().default
-		break;
 	case "--help":
 		Cli.help().default
 		break;
