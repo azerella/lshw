@@ -23,6 +23,13 @@ npm i -g lshw
 # Usage
 ```bash
 lshw
+
+# Usage: lshw [ options ] [ --version | --html | --json]
+#                 lshw
+# Options:
+#         -V, --version           Output lshw version
+#         -html, --html           Output hw configuration as HTML
+#         -json, --json           Output hw configuration as JSON
 ```
 
 ## Example output:

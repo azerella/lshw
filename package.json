@@ -1,6 +1,6 @@
 {
   "name": "lshw",
-  "version": "0.4.3",
+  "version": "1.5.4",
   "description": "Node.js version of lshw, a tool to extract detailed information on the hardware configuration of the machine.",
   "repository": "https://github.com/adamzerella/lshw",
   "author": "Adam A. Zerella <adam.zerella@gmail.com>",

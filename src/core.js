@@ -32,7 +32,7 @@ module.exports = {
         return {
             product: Os.cpus()[0].model,
             vendor: Os.cpus()[0].model.split(" ")[0],
-            width: this.arch()
+            width: this.arch().arch
         };
     },
     /**
