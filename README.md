@@ -2,7 +2,7 @@
 Node.js version of [lshw](https://www.unix.com/man-page/linux/1/lshw/), a tool to extract detailed information on the hardware configuration of the machine.
 
 [![CircleCI](https://circleci.com/gh/adamzerella/lshw.svg?style=svg)](https://circleci.com/gh/adamzerella/lshw)
-[![npm](https://img.shields.io/npm/v/:package.svg)](https://www.npmjs.com/package/lshw)
+[![npm version](https://badge.fury.io/js/lshw.svg)](https://badge.fury.io/js/lshw)
 [![GitHub stars](https://img.shields.io/github/stars/adamzerella/lshw.svg)](https://github.com/adamzerella/lshw/stargazers)
 [![GitHub license](https://img.shields.io/github/license/adamzerella/lshw.svg)](https://github.com/adamzerella/lshw/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/adamzerella/lshw.svg)](https://github.com/adamzerella/lshw/issues)

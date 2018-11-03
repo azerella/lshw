@@ -48,8 +48,23 @@ module.exports = {
     printHelp: function() {
 		console.info(`Usage: lshw [ options ] [ --short | --version ]
 		lshw --short\nOptions:
-		-V, --version\t\tPrint lshw version
-		-s, --short\t\tPrint the short hw configuration`);
+		-V, --version\t\tOutput lshw version
+		-s, --short\t\tvOutput summarised hw configuration as JSON
+		-html, --html\t\tOutput hw configuration as HTML
+		-json, --json\t\tOutput hw configuration as JSON`);
+	},
+    /**
+     * Print the main hw configuration as HTML
+     */
+    printHTML: function() {
+		console.info(`<html><h1>TODO</h1></html>`);
+	}
+	,
+    /**
+     * Print the main hw configuration as JSON
+     */
+    printJSON: function() {
+		console.info(`{}`);
     }
 }
 

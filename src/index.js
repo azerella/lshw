@@ -11,25 +11,37 @@ const Cli = require("./cli");
  */
 switch (process.argv[2]) {
 	case "--version":
-		Cli["--version"]().default;
+		Cli.version().default
 		break;
 	case "-V":
-		Cli["--version"]().default;
+		Cli.version().default
 		break;
 	case "--short":
-		Cli["--short"]().default;
+		Cli.short().default
 		break;
 	case "-s":
-		Cli["--short"]().default;
+		Cli.short().default
 		break;
 	case "--help":
-		Cli["--help"]().default;
+		Cli.help().default
 		break;
 	case "-help":
-		Cli["--help"]().default;
+		Cli.help().default;
 		break;
 	case "-h":
-		Cli["--help"]().default;
+		Cli.help().default;
+		break;
+	case "--html":
+		Cli.html().default;
+		break;
+	case "-html":
+		Cli.html().default;
+		break;
+	case "--json":
+		Cli.json().default;
+		break;
+	case "-json":
+		Cli.json().default;
 		break;
 	default:
 		Cli.print()
