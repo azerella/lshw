@@ -1,3 +1,7 @@
+# 1.5.5
+-	Minor tweaks to README wording.
+-	Fleshed out CONTRIBUTING content
+
 # 1.5.4
 -	Implemented `--json`, `--html` CLI option and features
 -	Updated CircleCI pipeline to publish from `<master>` branch.
