@@ -1,26 +1,23 @@
 # lshw - List hardware
-**Node.js** version of [lshw](https://www.unix.com/man-page/linux/1/lshw/), a tool to extract detailed information on the hardware configuration of the machine.
 
-[![CircleCI](https://circleci.com/gh/adamzerella/lshw.svg?style=svg)](https://circleci.com/gh/adamzerella/lshw)
-[![npm version](https://badge.fury.io/js/lshw.svg)](https://badge.fury.io/js/lshw)
-[![GitHub stars](https://img.shields.io/github/stars/adamzerella/lshw.svg)](https://github.com/adamzerella/lshw/stargazers)
-[![GitHub license](https://img.shields.io/github/license/adamzerella/lshw.svg)](https://github.com/adamzerella/lshw/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/adamzerella/lshw.svg)](https://github.com/adamzerella/lshw/issues)
+> 💻 Return the hardware configuration of the machine, inspired by [lshw](https://www.unix.com/man-page/linux/1/lshw/).
 
-This project aims to be as authentic as possible when it comes to the usage of the original [lshw](https://www.unix.com/man-page/linux/1/lshw/). While aiming to be authentic, features like HTML output have been improved for HTML5 compatibility.
+I'm aspiring to make open-source my full-time work. If you like the work that I do, please consider supporting me.
 
-> **NOTE**: This project lacks many of the features from the original `lshw` tool. Additional issues arise when the Node.js `os` library doesn't provide low-level support for things like PCI devices or motherboard bus information.
+[![Coffee][badge_coffee_donate]](https://www.buymeacoffee.com/adamzerella)
+[![PayPal][badge_paypal_donate]](https://paypal.me/adamzerella)
 
-# Prerequisites
-This project preferences LTS releases:
-- [Node.js >= 10.13.0](https://nodejs.org/dist/v10.13.0)
-
-# Install
+## Install
 ```bash
 npm i -g lshw
 ```
 
-# Usage
+## Usage
+
+This project lacks many of the features from the original `lshw` tool. Additional issues arise when the [Node.js os](https://nodejs.org/api/os.html) library doesn't provide low-level support for things like PCI devices or motherboard bus information.
+
+## CLI
+
 ```bash
 $ lshw
 
@@ -32,7 +29,7 @@ $ lshw
 #         -json, --json           Output hw configuration as JSON
 ```
 
-## Output:
+### Yields:
 ```bash
 MY-PC
           Width: x64
@@ -53,7 +50,14 @@ MY-PC
 ...
 ```
 
-# Contributors
+## Contribute
+
+Don't be scared raise an issue or a pull request! Any contributions, no matter how big or small will land your picture here.
+
 <div style="display:inline;">
-  <img width="64" height="64" href="https://github.com/adamzerella" src="https://avatars0.githubusercontent.com/u/1501560?s=460&v=4" alt="Adam A. Zerella"/>
+  <a href="https://github.com/adamzerella"><img width="64" height="64" src="https://avatars0.githubusercontent.com/u/1501560?s=460&v=4" alt="Adam Zerella"/></a>
 </div>
+
+[badge_coffee_donate]: https://adamzerella.com/badges/coffee.svg
+[badge_patreon_donate]: https://adamzerella.com/badges/patreon.svg
+[badge_paypal_donate]: https://adamzerella.com/badges/paypal.svg
